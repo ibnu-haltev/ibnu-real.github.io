@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+
+html, header {
+  height: 100%;
+}
+      
+body {
+    background-color: #ffc107;
+}
+
+.navbar {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-link {
+    color: #333300!important;
+}
+
+.nav-link:hover {
+    color: #fff!important;
+}
+
+.carousel {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.materi {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.materi-text {
+    word-spacing: 5px;
+}
+
+.btn-secondary {
+    border-radius: 25px;
+}
+
+.btn-secondary:hover {
+    color: #6c757d!important;
+    background-color: #f8f9fa;
+    transition: 0.4s all ease-in-out;
+    border: 1px solid #333300;
+}
+
+.materi h1 {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.pidio video {
+    text-align: center;
+}
+
+.pidio h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.pidio {
+    height: 600px;
+    padding-top: 100px;
+}
+
+.card-title, .card-text {
+    color: white;
+}
+
+.card {
+    float: center;
+    overflow: hidden;
+    border-radius: 25px;
+    border: #ffc107 solid 1px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1.25, 1.25);
+    transform: scale(1.25, 1.25);
+}
+
+.akordion-div {
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+
+
+.akordion {
+    margin-top: 100px;
+    border-radius: 25px;
+}
+
+.acivment-h1 {
+    color: #f8f9fa!important;
+    margin-top: 200px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.accordion-button {
+  background-color: #273036!important;
+}
+
+.accordion-item {
+  background-color: #273036!important;
+}
+
+.resultimg {
+  height: 30px;
+  width: 30px;
+}
+
+footer {
+    background-color: #273036;
+    color: white;
+}
+
+
+    </style>
+    <title>Natus Vincere</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="https://sekolah-haltev-ibnu.000webhostapp.com/"><img src="img/logo.png" alt="" style="height: 50px; " ></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link fw-bolder" aria-current="page" href="#about">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bolder" href="#videoN">Squad's Play</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bolder" href="#active-squad">Active Squad</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bolder" href="#acivment">Achievments</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+     <!--  <section class="carousel">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/CS-GO-wallpaper-HD-NAVI_hu185eda781a42cf6c85a6a1ebd177e0b5_213862_1920x1080_resize_q75_lanczos.jpeg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>NAVI Natus Vincere</h5>
+                <br>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/timcarousel.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>NAVI Natus Vincere</h5>
+                <p class="fw-bolder">BLAST Premier: Global Final Champions.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/naviterakhir.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>NAVI Natus Vincere</h5>
+                <p class="fw-bolder">Dreamhack Master Spiring 2021.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section> -->
+      
+
+      <section id="about" class="materi bg-warning">
+        <div data-aos="fade-right" data-aos-duration="1000" class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h1>  <img src="img/logo.png" style="height: 100px;" > <br> <br /> NAVI <br> Natus Vincere</h1>
+            </div>
+            <div style="padding-top:300px; padding-bottom:300px;" class="col-md-6 materi-text">
+              <p class="fw-bolder">Natus Vincere (Latin for "born to win", often abbreviated to NAVI and previously Na`Vi) is an Ukrainian professional esports organization.
+                It was the first team to win three Counter-Strike Majors in one calendar year - IEM Season IV, ESWC 2010 and WCG 2010.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section style="height:700px; padding-top:150px;" id="videoN" class="pidio bg-dark">
+        <div data-aos="fade-left" data-aos-duration="1000" class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/2HCI15wWXm4?rel=0" title="YouTube video" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-md-6">
+              <h1 style="color: aliceblue; "> GRAND FINAL! NaVi vs Astralis - BLAST Premier - HIGHLIGHTS l CSGO</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <br>
+
+
+      <section id="active-squad" class="card-s bg-warning">
+        <div data-aos="fade-down" data-aos-duration="1500" class="container">
+          <div class="row text-center " style="padding-top: 100px;">
+            <div class="col "><h2 class="fw-bolder">Active Squad</h2></div>
+          </div>
+          <div class="row justify-content-center " style=" margin-bottom: 100px; margin-top: 100px;">
+            <div class="col-md-4 mb-3 mx-5 mt-5">
+            <div class="card" style="width: 18rem;">
+              <img src="img/Flamie.jpg" class="card-img-top zoom" alt="...">
+              <div class="card-body bg-dark">
+                <h5 class="card-title">flamie</h5>
+                <p class="card-text">Name : Egor Vasilev <br> Join Date : 2015-04-10 </p>
+                <a href="https://liquipedia.net/counterstrike/Flamie" target="_blank" class="btn btn-secondary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 mx-5 mt-5">
+            <div class="card" style="width: 18rem;">
+              <img src="img/S1mple.jpg" class="card-img-top zoom" alt="...">
+              <div class="card-body bg-dark">
+                <h5 class="card-title">s1mple</h5>
+                <p class="card-text">Name : Oleksandr Kostyliev <br> Join Date : 2016-08-04</p>
+                <a href="https://liquipedia.net/counterstrike/S1mple" target="_blank" class="btn btn-secondary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 mx-5 mt-5">
+            <div class="card" style="width: 18rem;">
+              <img src="img/electronic.jpg" class="card-img-top zoom" alt="...">
+              <div class="card-body bg-dark">
+                <h5 class="card-title">electronic</h5>
+                <p class="card-text">Name : Denis Sharipov <br> Join Date : 2017-11-06</p>
+                <a href="https://liquipedia.net/counterstrike/Electronic" target="_blank" class="btn btn-secondary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 mx-5 mt-5">
+            <div class="card" style="width: 18rem;">
+              <img src="img/Boombl14.jpg" class="card-img-top zoom" alt="...">
+              <div class="card-body bg-dark">
+                <h5 class="card-title">Boombl4 </h5>
+                <p class="card-text">Name : Kirill Mikhailov <br> Join Date : 2019-05-29</p>
+                <a href="https://liquipedia.net/counterstrike/Boombl4" target="_blank" class="btn btn-secondary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 mx-5 mt-5">
+            <div class="card" style="width: 18rem;">
+              <img src="img/Perfecto.jpg" class="card-img-top zoom" alt="...">
+              <div class="card-body bg-dark">
+                <h5 class="card-title">Perfecto</h5>
+                <p class="card-text">Name : Ilya Zalutskiy <br> Join Date : 2020-01-24</p>
+                <a href="https://liquipedia.net/counterstrike/Perfecto" target="_blank" class="btn btn-secondary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 mx-5 mt-5">
+            <div class="card" style="width: 18rem;">
+              <img src="img/B1ad3.jpg" class="card-img-top zoom" alt="...">
+              <div class="card-body bg-dark">
+                <h5 class="card-title">B1ad3 (Coach)</h5>
+                <p class="card-text">Name : Andrii Gorodenskyi <br> Join Date : 2019-09-20</p>
+                <a href="https://liquipedia.net/counterstrike/B1ad3" target="_blank" class="btn btn-secondary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+  </section>
+
+      <section class="acivment bg-dark" id="acivment">
+        <div data-aos="fade-right" data-aos-duration="1000" class="container akordion-div">
+          <div class="row ">
+            <div class="col-md-6">
+              <h1 class="acivment-h1">Achievments</h1>
+            </div>
+            <div class="col-md-6 akordion " >
+              <div class="accordion accordion-flush " id="accordionFlushExample">
+                <div class="accordion-item bg-dark text-light">
+                  <h2 class="accordion-header" id="flush-headingx">
+                    <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsex" aria-expanded="false" aria-controls="flush-collapsex"><img src="img/BLAST_Premier_Finals_icon.png">&nbsp BLAST Premier: Global Final 2020</button>
+                  </h2>
+                  <div id="flush-collapsex" class="accordion-collapse collapse" aria-labelledby="flush-headingx" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Date : 2021-01-24
+                      <br>
+                      Placement : 1st
+                      <br>
+                      Tier : S-Tier
+                      <br>
+                      Type : Online
+                      <br>
+                      Result :&nbsp 2 : 0 &nbsp  <img class="resultimg" src="resultimg/82px-Astralis_2020_notext.png">
+                      <br>
+                      Prize : $600,000
+                      <br>
+                      <br>
+                      <a href="https://liquipedia.net/counterstrike/BLAST/Premier/2020/Global_Final" target="_blank" class="btn btn-primary">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="accordion-item bg-dark text-light mt-2">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"><img src="img/Intel_Extreme_Masters_2019_icon.png" >&nbsp Intel Extreme Masters XIV - World Championship </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Date : 2020-03-01
+                      <br>
+                      Placement : 1st
+                      <br>
+                      Tier : S-Tier
+                      <br>
+                      Type : Offline
+                      <br>
+                      Result :&nbsp 3 : 0 &nbsp  <img class="resultimg" src="resultimg/70px-BIG_lightmode.png">
+                      <br>
+                      Prize : $250,000
+                      <br>
+                      <br>
+                      <a href="https://liquipedia.net/counterstrike/Intel_Extreme_Masters/Season_XIV/World_Championship" target="_blank" class="btn btn-primary">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-dark text-light mt-2">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"><img src="img/Starseries.png">&nbsp StarSeries & i-League CS:GO Season 7</button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Date : 2019-04-07
+                      <br>
+                      Placement : 1st
+                      <br>
+                      Tier : S-Tier
+                      <br>
+                      Type : Offline
+                      <br>
+                      Result :&nbsp 3 : 0 &nbsp  <img class="resultimg" src="resultimg/120px-Fnatic_2015_allmode.png">
+                      <br>
+                      Prize : $250,000
+                      <br>
+                      <br>
+                      <a href="https://liquipedia.net/counterstrike/StarSeries_i-League/Season_7" target="_blank" class="btn btn-primary">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-dark text-light mt-2">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree"><img src="img/BLAST_Pro_Series_icon.png">&nbsp BLAST Pro Series: Copenhagen 2018</button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Date : 2018-11-03
+                      <br>
+                      Placement : 1st
+                      <br>
+                      Tier : A-Tier
+                      <br>
+                      Type : Offline
+                      <br>
+                      Result :&nbsp 2 : 0 &nbsp  <img class="resultimg" src="resultimg/100px-Ninjas_in_Pyjamas_2017_lightmode.png">
+                      <br>
+                      Prize : $125,000
+                      <br>
+                      <br>
+                      <a href="https://liquipedia.net/counterstrike/BLAST/Pro_Series/2018/Copenhagen" target="_blank" class="btn btn-primary">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+                 <div class="accordion-item bg-dark text-light mt-2">
+                  <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour"><img src="img/FACEIT_Major_icon.png">&nbsp FACEIT Major: London 2018</button>
+                  </h2>
+                  <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Date : 2018-09-23
+                      <br>
+                      Placement : 2nd
+                      <br>
+                      Tier : S-Tier
+                      <br>
+                      Type : Offline
+                      <br>
+                      Result :&nbsp 0 : 2 &nbsp  <img class="resultimg" src="resultimg/82px-Astralis_2020_notext.png">
+                      <br>
+                      Prize : $150,000
+                      <br>
+                      <br>
+                      <a href="https://liquipedia.net/counterstrike/FACEIT/2018/Major" target="_blank" class="btn btn-primary">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+                 <div class="accordion-item bg-dark text-light mt-2">
+                  <h2 class="accordion-header" id="flush-headingFive">
+                    <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive"><img src="img/ESL_One_2016_icon.png" >&nbsp ESL One: Cologne 2018</button>
+                  </h2>
+                  <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Date : 2018-07-08
+                      <br>
+                      Placement : 1st
+                      <br>
+                      Tier : S-Tier
+                      <br>
+                      Type : Offline
+                      <br>
+                      Result :&nbsp  3 : 1 &nbsp  <img class="resultimg" src="resultimg/70px-BIG_lightmode.png">
+                      <br>
+                      Prize : $125,000
+                      <br>
+                      <br>
+                      <a href="https://liquipedia.net/counterstrike/ESL/One/2018/Cologne" target="_blank" class="btn btn-primary">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+                 <div class="accordion-item bg-dark text-light mt-2">
+                  <h2 class="accordion-header" id="flush-headingSix">
+                    <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix"><img src="img/CSGO_Asia_Championships_2018_icon.png">&nbsp CS:GO Asia Championships 2018</button>
+                  </h2>
+                  <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Date : 2018-06-18
+                      <br>
+                      Placement : 1st
+                      <br>
+                      Tier : A-Tier 
+                      <br>
+                      Type : Offline
+                      <br>
+                      Result :&nbsp  2 : 1 &nbsp  <img class="resultimg" src="resultimg/97px-Virtus_Pro.png">
+                      <br>
+                      Prize : $150,000
+                      <br>
+                      <br>
+                      <a href="https://liquipedia.net/counterstrike/CS:GO_Asia_Championships/2018" target="_blank" class="btn btn-primary">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+                 <div class="accordion-item bg-dark text-light mt-2">
+                  <h2 class="accordion-header" id="flush-headingSeven">
+                    <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven"><img src="img/Starseries2.png">&nbsp StarSeries & i-League CS:GO Season 5</button>
+                  </h2>
+                  <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Date : 2018-06-03
+                      <br>
+                      Placement : 1st
+                      <br>
+                      Tier : S-Tier 
+                      <br>
+                      Type : Offline
+                      <br>
+                      Result :&nbsp  2 : 0 &nbsp  <img class="resultimg" src="resultimg/151px-NRG_Esports_2017_lightmode.png"> 
+                      <br>
+                      Prize : $125,000
+                      <br>
+                      <br>
+                      <a href="https://liquipedia.net/counterstrike/StarSeries_i-League/Season_5" target="_blank" class="btn btn-primary">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+                 <div class="accordion-item bg-dark text-light mt-2">
+                  <h2 class="accordion-header" id="flush-headingEight">
+                    <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight"><img src="img/ESL_One_2016_icon (1).png">&nbsp ESL One: New York 2016</button>
+                  </h2>
+                  <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Date : 2016-10-02
+                      <br>
+                      Placement : 1st
+                      <br>
+                      Tier : S-Tier 
+                      <br>
+                      Type : Offline
+                      <br>
+                      Result :&nbsp  2 : 1 &nbsp  <img class="resultimg" src="resultimg/97px-Virtus_Pro.png">
+                      <br>
+                      Prize : $125,000
+                      <br>
+                      <br>
+                      <a href="https://liquipedia.net/counterstrike/ESL/One/2016/New_York" target="_blank" class="btn btn-primary">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+                 <div class="accordion-item bg-dark text-light mt-2">
+                  <h2 class="accordion-header" id="flush-headingNine">
+                    <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine"><img src="img/MLG-icon.png">&nbsp MLG Major Championship: Columbus 2016</button>
+                  </h2>
+                  <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Date : 2016-04-03
+                      <br>
+                      Placement : 2nd
+                      <br>
+                      Tier : S-Tier 
+                      <br>
+                      Type : Offline
+                      <br>
+                      Result :&nbsp  0 : 2 &nbsp  <img class="resultimg" src="resultimg/101px-Luminosity_Gaming_allmode.png">   
+                      <br>
+                      Prize : $150,000
+                      <br>
+                      <br>
+                      <a href="https://liquipedia.net/counterstrike/MLG/2016/Columbus" target="_blank" class="btn btn-primary">Learn More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#273036"
+          fill-opacity="1"
+          d="M0,128L48,122.7C96,117,192,107,288,117.3C384,128,480,160,576,154.7C672,149,768,107,864,106.7C960,107,1056,149,1152,160C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+      <footer class="text-center ">
+        <p>
+          @Copyright 2021 | Yovana Ibnu Sina
+        </p>
+      </footer>
+      </section>
+
+   
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+  </body>
+</html>
